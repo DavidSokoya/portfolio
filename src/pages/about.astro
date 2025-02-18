@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | David Sokoya" description="About David Sokoya">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					class="image"
+					width="1553"
+					height="500"
+					src="/assets/david_sokoya_.jpg"
+					alt="David Sokoya at Microsoft Office"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						I specialize in building and improving software to enhance the lives of users. My passion for learning and constant self-improvement has been a driving force throughout my journey. In university, I focused on operations with the goal of streamlining and optimizing business processes.
+					<p>
+						Working across various industries, I realized that even minor system and process improvements can have a significant impact on user experience and satisfaction.
+					</p>
+					<p>
+						Through both my professional experience and personal projects, I've seen firsthand how the right technology can make a real difference in people's daily lives. Now, I dedicate myself to developing these solutions and making incremental improvements in the world through software.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>BSc Computer Science.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p><strong>Frontend: </strong>React | HTML5/CSS | Vanilla JavaScript | Tailwind CSS | Bootstrap</p>
+					<p><strong>Backend: </strong>Node.js | TypeScript| Express | MongoDB | Mongoose | Rust | Solidity </p>
+					<p><strong>Others: </strong>Agile Methodology | Scrum (CSM)  |  Remote first team experience </p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+	.image {
+		height: inherit;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

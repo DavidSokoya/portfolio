@@ -1,0 +1,41 @@
+{
+  
+  "projects": [
+      {
+          "imageUrl": "/assets/project/tempmint.gif",
+          "title": "Tempmint Businesss Solutions",
+          "type": "visit",
+          "link": "https://tempmint.com/"
+      },
+      {
+          "imageUrl": "/assets/project/beckfort.gif",
+          "title": "BeckFort Escrow Payment platform",
+          "type": "visit",
+          "link": "https://beckfort.com/"
+      },
+      {
+          "imageUrl": "/assets/project/readyapples.gif",
+          "title": "Ready Apples career growth",
+          "type": "visit",
+          "link": "https://readyapples.com/"
+      },
+      {
+        "imageUrl": "/assets/project/spantrix.gif",
+        "title": "Spantrix Web Hosting Services",
+        "type": "visit",
+        "link": "https://spantrix.com/"
+    },
+    {
+        "imageUrl": "/assets/project/lea.gif",
+        "title": "Lea's Beuty",
+        "type": "visit",
+        "link": "https://github.com/wasutz/astro-resume-theme"
+    },
+    {
+        "imageUrl": "/assets/project/amazonite.gif",
+        "title": "Digital Amazonite",
+        "type": "visit",
+        "link": "https://github.com/wasutz/astro-resume-theme"
+    }
+  ]
+}
